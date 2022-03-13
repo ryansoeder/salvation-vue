@@ -59,10 +59,6 @@ export default {
 </script>
 
 <style scoped>
-section {
-	margin-top: 100px;
-}
-
 .fade-enter-active,
 .fade-leave-active {
 	transition: opacity 0.5s ease;
