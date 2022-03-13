@@ -1,6 +1,8 @@
 <template>
 	<template v-if="pageInfo">
-		<h1 v-if="pageInfo.title">{{ pageInfo.title.rendered }}</h1>
+		<h1 v-if="pageInfo.title" :key="pageInfo.title.rendered">
+			{{ pageInfo.title.rendered }}
+		</h1>
 		<transition name="fade">
 			<div v-if="blocks" class="blocks">
 				<component
@@ -43,7 +45,7 @@ export default {
 		},
 		blockCaller(componentname) {
 			return defineAsyncComponent(() =>
-				import(`@/components/${componentname}.vue`)
+				import(`@/components/blocks/${componentname}.vue`)
 			);
 		},
 	},
