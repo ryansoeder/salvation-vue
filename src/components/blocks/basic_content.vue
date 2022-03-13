@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import basicContentStyles from '@/styles/basic-content.scss'
+import basicContentStyles from '@/styles/blocks/basic-content.scss'
 export default {
 	name: 'BasicContent',
 	props: {
